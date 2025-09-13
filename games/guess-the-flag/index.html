@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina la Bandera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="setup-screen" class="game-container">
+        <h1>Adivina la Bandera</h1>
+        <p>Selecciona el modo de juego:</p>
+        <div class="mode-selection">
+            <button id="one-player-btn" class="mode-btn">1 Jugador</button>
+            <button id="two-player-btn" class="mode-btn">2 Jugadores</button>
+        </div>
+        <a href="../../index.html" class="back-link">← Volver al menú</a>
+    </div>
+
+    <div id="game-wrapper" class="game-container" style="display: none;">
+        <header>
+            <h1>Adivina la Bandera</h1>
+            <h3 id="current-player-turn"></h3>
+            <a href="../../index.html" class="back-link">← Volver al menú</a>
+        </header>
+
+        <div class="score-board">
+            <p id="p1-score-display">Jugador 1: <span id="score-p1">0</span></p>
+            <p id="p2-score-display" style="display: none;">Jugador 2: <span id="score-p2">0</span></p>
+            <p>Ronda: <span id="round-counter">0</span> / <span id="total-rounds">10</span></p>
+        </div>
+        
+        <main id="game-area">
+            <img id="flag-image" src="" alt="Bandera del país">
+            <div id="options-container">
+                <!-- Las opciones se generarán con JavaScript -->
+            </div>
+            <p id="feedback"></p>
+            <button id="next-button" style="display: none;">Siguiente</button>
+        </main>
+
+        <div id="game-over-screen" style="display: none;">
+            <h2 id="winner-text">¡Juego Terminado!</h2>
+            <p>Puntaje Final:</p>
+            <p>Jugador 1: <span id="final-score-p1">0</span></p>
+            <p id="final-score-p2-display" style="display: none;">Jugador 2: <span id="final-score-p2">0</span></p>
+            <button id="restart-button" class="restart-button">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

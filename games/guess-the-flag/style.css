@@ -1,0 +1,161 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.mode-selection {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.mode-btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mode-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.score-board p {
+    flex: 1;
+}
+
+
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+#flag-image {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#options-container button {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#options-container button:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+}
+
+#options-container button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#options-container button.correct {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+#options-container button.incorrect {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+#feedback {
+    min-height: 24px;
+    font-weight: bold;
+}
+
+#feedback.correct {
+    color: #28a745;
+}
+
+#feedback.incorrect {
+    color: #dc3545;
+}
+
+#next-button, .restart-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#current-player-turn {
+    color: #007bff;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    min-height: 24px;
+}
+
+#winner-text {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+#game-over-screen p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
